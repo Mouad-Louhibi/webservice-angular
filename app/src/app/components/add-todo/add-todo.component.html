@@ -1,0 +1,9 @@
+<h3>add todo</h3>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="exampleInputTodo" class="form-label">todo</label>
+      <input type="email" formControlName="body" class="form-control" id="exampleInputTodo" >
+   </div>
+    
+    <button type="submit" [disabled]="!form.valid" class="btn btn-primary">Add</button>
+  </form>
